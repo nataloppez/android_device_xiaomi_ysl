@@ -465,3 +465,8 @@ PRODUCT_BOOT_JARS += \
 # GCam Go
 PRODUCT_PACKAGES += \
     GCam
+    
+# Enable updatable APEX
+ifeq ($(ENABLE_APEX), true)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+endif
