@@ -70,3 +70,7 @@
 
 # Usb
 /(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.ysl			u:object_r:hal_usb_default_exec:s0
+
+# Apex Metadata
+/data/vendor/metadata_apex(/.*)?              u:object_r:apex_metadata_file:s0
+/data/vendor/metadata_apex/sessions(/.*)?     u:object_r:apex_metadata_file:s0
