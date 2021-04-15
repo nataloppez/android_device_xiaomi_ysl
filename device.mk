@@ -351,7 +351,8 @@ PRODUCT_PACKAGES += \
     init.goodix.sh \
     init.recovery.qcom.rc \
     init.recovery.qcom.usb.rc \
-    init.ysl.rc
+    init.ysl.rc \
+    apex_metadata.rc
 
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
