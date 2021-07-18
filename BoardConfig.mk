@@ -209,5 +209,12 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
+# APEX image
+ifeq ($(ENABLE_APEX), true)
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+else
+OVERRIDE_TARGET_FLATTEN_APEX := true
+endif
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/ysl/BoardConfigVendor.mk
