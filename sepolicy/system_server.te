@@ -10,5 +10,3 @@ allow system_server goodix_fp_hwservice:hwservice_manager find;
 # Input devices
 r_dir_file(system_server, vendor_idc_file);
 r_dir_file(system_server, vendor_keylayout_file);
-
-get_prop(system_server, exported_camera_prop);
