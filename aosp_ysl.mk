@@ -35,6 +35,9 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
+# APEX
+ENABLE_APEX := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
 PRODUCT_NAME := aosp_ysl
